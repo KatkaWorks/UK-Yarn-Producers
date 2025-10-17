@@ -50,11 +50,12 @@ producer_id, name, short_name, founded_year, headquarters_city, headquarters_reg
 
 ### Columns
 ```text
-product_id, producer_name, product_name, description, fiber_composition, weight, yardage, gauge, colour_range, launch_year, discontinued
+product_id, producer_id, producer_name, product_name, description, fiber_composition, weight, yardage, gauge, colour_range, launch_year, discontinued
 ```
 ### Instructions
 
-- `product_id`: leave blank or use sequential numbers  
+- `product_id`: leave blank or use sequential numbers
+- `producer_id`: unique ID of the producer, matching the producer_id in the Producers sheet (used to link products to the correct producer)  
 - **producer_name**: select the producer from the `Producers` sheet  
 - **product_name**: name of the yarn line or product  
 - `description`: short product description  
