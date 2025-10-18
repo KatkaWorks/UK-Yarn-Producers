@@ -1,3 +1,22 @@
+# UK Yarn Producers
+
+## Overview of British Wool
+
+Did you know that British wool is not a single material, but a collection of many unique types, each with its own specific characteristics? The breed of sheep from which the wool comes plays a key role in its qualities. Each variety has a story to tell about its origin and offers different textures, colours and features that can have a significant impact on the outcome of your projects.
+
+Some of the best-known types include fibres from Bluefaced Leicester, Masham, British wool, alpaca, merino, Romney, Derbyshire gritstone, Jacob, Black Welsh Mountain, Hebridean, and North of England Mule breeds.
+
+Here, I focus on three producers from different regions of Great Britain:
+
+- **Appleton's Wool Ltd**, based in **Buckinghamshire**, specialises in British crewel and tapestry wool, focusing on quality and consistency.
+  
+- **Baa Ram Ewe**, based in **Lancashire**, specialises in breed-specific, sustainably sourced British wool and works closely with local farmers, spinners, and dyers.
+
+- **BareFaced Yarn**, based in **Northumberland**, blends Bluefaced Leicester wool with luxurious alpaca and also offers organic cotton in soft, natural colours.
+
+By choosing wool from these producers, you are not only getting top-quality materials but also supporting local farmers and helping to preserve the tradition of British wool production.
+
+
 # UK Yarn Producers – Data Entry Guide
 
 Welcome to the UK Yarn Producers database! This guide explains how to use the spreadsheet and organise data for each producer.
