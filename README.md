@@ -67,11 +67,23 @@ product_id, producer_id, producer_name, product_name, description, fiber_composi
 - `launch_year`: year the product was introduced  
 - `discontinued`: TRUE or FALSE  
 
-**Tip:** use drop-downs where available to ensure consistency.
-## General Tips
+##  Data Preparation Summary (18 October 2025)
 
-- Always use the drop-downs for `fiber_types` and `certifications` to avoid typos.  
+The following steps were completed to prepare the dataset for analysis:
+
+###  Data Cleaning
+- Standardised region names using official postal naming.
+- Trimmed extra spaces and checked consistency in key text fields.
+- Verified required fields are populated and correctly formatted.
+
+###  Data Normalisation
+- Created `FiberTypes_Linked` and `Certifications_Linked` sheets to store multi-value fields in relational form.
+- Ensured each entry links back to a valid producer via `producer_id`.
+
+###  Data Validation
+- Cross-checked that all linked `producer_id` values exist in the main `Producers` sheet.
+- No missing or unmatched references remain.
 - Multi-select values should be separated by commas.  
 - Keep all data consistent to make it easier for analysis in SQL or Power BI.  
-- Highlight new or updated entries with a different colour if needed.  
+
 
