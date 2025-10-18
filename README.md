@@ -86,7 +86,7 @@ product_id, producer_id, producer_name, product_name, description, fiber_composi
 - `launch_year`: year the product was introduced  
 - `discontinued`: TRUE or FALSE  
 
-##  Data Preparation Summary (18 October 2025)
+##  Data Preparation Summary
 
 The following steps were completed to prepare the dataset for analysis:
 
