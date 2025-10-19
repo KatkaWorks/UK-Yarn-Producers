@@ -59,12 +59,10 @@ producer_id, name, short_name, founded_year, headquarters_city, headquarters_reg
 
 - **Column:** `fiber_name`  
 - **Example values:** Merino, Shetland, Bluefaced Leicester, Gotland, Jacob, Alpaca, Mohair, Cashmere  
-- Used for drop-down selection in the `Producers` sheet (`fiber_types` column).  
 ## Certifications Sheet
 
 - **Column:** `cert_name`  
 - **Example values:** GOTS, RWS, Woolmark, Oeko-Tex, Soil Association Organic, Fair Trade  
-- Used for drop-down selection in the `Producers` sheet (`certifications` column).  
 ## Products Sheet
 
 ### Columns
@@ -103,6 +101,34 @@ The following steps were completed to prepare the dataset for analysis:
 - Cross-checked that all linked `producer_id` values exist in the main `Producers` sheet.
 - No missing or unmatched references remain.
 - Multi-select values should be separated by commas.  
-- Keep all data consistent to make it easier for analysis in SQL or Power BI.  
+- Keep all data consistent to make it easier for analysis in SQL or Power BI.
+
+## Data Import Workflow
+
+To prepare my Excel data for analysis in SQL and Power BI, I followed this process:
+
+1. **Excel source**  
+   The dataset was originally stored in an Excel workbook containing multiple sheets (e.g., `Producers`, `Products`, `FiberTypes`, `Certifications`).
+
+2. **CSV conversion**  
+   Each sheet was individually exported to a `.csv` file. I ensured only one sheet was active when saving, to avoid exporting the entire workbook.
+
+3. **Database setup in DBeaver**  
+   - I used **DBeaver** with a local **SQLite** connection.  
+   - For each `.csv` file, I imported the data into a new SQLite table using DBeaver’s import tool.  
+   - I verified that column names matched the headers from the CSV files and ensured proper encoding (UTF-8).  
+   - Table names correspond to the original sheet names for clarity and consistency.
+
+4. **Verification**  
+   After importing, I confirmed that:
+   - All columns were correctly recognised (e.g., `fiber_composition`, `gauge`, `launch_year`).  
+   - Table structures matched expectations.
+   - Referential fields such as `producer_id` were consistent across tables.
+
+This setup now allows me to:
+- Run SQL queries to explore and validate the data.
+- Connect the SQLite database to **Power BI** for data visualisation.
+- Maintain a clean, reproducible workflow that’s easy to update as the dataset grows.
+
 
 
