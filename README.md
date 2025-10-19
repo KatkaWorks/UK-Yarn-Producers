@@ -129,6 +129,19 @@ This setup now allows me to:
 - Run SQL queries to explore and validate the data.
 - Connect the SQLite database to **Power BI** for data visualisation.
 - Maintain a clean, reproducible workflow that’s easy to update as the dataset grows.
+### **Process for Filtering 100% Wool Products and Exporting to CSV**
+
+1. **Filtering 100% Wool Products in DBeaver**  
+   In DBeaver, I used an SQL query to filter products made from **100% wool** in the `Products` table. The query I used is as follows:
+   
+   ```sql
+   SELECT producer_name, product_name, fiber_composition  
+   FROM Products
+   WHERE fiber_composition LIKE '%100%';
+   ```
+     
+2. **Exporting to CSV Format**
+   After obtaining the desired results, I exported the filtered data into a CSV file, which I can later use for further analysis and visualisation in Power BI.
 
 
 
